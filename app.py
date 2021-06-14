@@ -32,8 +32,8 @@ client = Client(account_sid, auth_token)
 message = client.messages \
                 .create(
                      body="Daily Wisdom" + f"\n{verse}",
-                     from_='+17065537047',
-                     to='6193130753'
+                     from_='Twilio phone number',
+                     to='Your phone number'
                  )
 
 print(message.sid)
